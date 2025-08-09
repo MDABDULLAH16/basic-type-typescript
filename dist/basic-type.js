@@ -17,3 +17,7 @@ function nothingToReturn() {
 const friends = ["abir", "amir", "rohim", "korib"];
 console.log(friends);
 friends[3] = "karim";
+console.log(friends);
+//tuple
+const students = ["Abid", 22, false];
+console.log(students);
