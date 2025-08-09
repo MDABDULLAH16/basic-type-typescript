@@ -15,8 +15,11 @@ const user: {
 
 user.middleName = "rajjak";
 
-for (const value in user) {
-  value[keyof:value]
+for (const key in user) {
+  if (user.hasOwnProperty(key)) {
+    const element = user[key as keyof typeof user];
+    console.log(element);
+  }
 }
 
 // console.log(user);
